@@ -19,6 +19,13 @@ const IndexPage = () => (
           </p>
 
           <p>
+            The name Koncept is derived from the word "concept" since our principles are built on the modern
+            concepts of management and product development, which is our unique selling point. We apply some
+            of the newly developed concepts in all aspects of engineering work that we do from construction,
+            agriculture to software development as well as advanced analytics and artificial intelligence.
+          </p>
+
+          <p>
             <a href='/Team'>Koncept team</a> has extensive experience in complex projects across diverse industries including 
             construction and city palnning, software development, advanced analytics, business intelligence, 
             enterprice resource planning, medical services, education, and agriculture.
