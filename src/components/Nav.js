@@ -14,7 +14,6 @@ export default function Nav({ onMenuToggle = () => {} }) {
             }}
             className="menuToggle"
           >
-            <span>Menu</span>
           </a>
           <div id="menu">
             <ul>
