@@ -20,7 +20,8 @@ const IndexPage = () => <Layout fullMenu>
 						A cofounder, a PhD holder in theoretical physics and a published author.
 						Faris has more than 10 years of experience in international companies. He is
 						an expert in large-scale, low latency systems, causal inference, and utilizing
-						artificial intelligence to solve business problems.
+						artificial intelligence to solve business problems. In addition to that, Faris
+						is an educator and a public speaker.
 					</p>
 				</section>
 			</div>
