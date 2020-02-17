@@ -30,6 +30,20 @@ const IndexPage = () => (
           </p>
 
           <hr />
+          <h3>Enterprise Resource Planning Application</h3>
+          <p>
+            Having to deal with the complexity of your business at all different levels is a tedious and time consuming
+            job. At Koncept we take away that complexity by customizing and deploying solutions that are tailored for
+            your business needs.
+          </p>
+
+          <p>
+            The advantage of partnering with us is that, we take care of all the work that is not
+            at the core to your business, however, it is considered critical to your success. For instance, maintaining
+            software might necessarily by part of your business, but it is a key component for the operations. Koncept
+            does the hard work of ensuring, that your systems are up and running, and the standards are looked after.
+          </p>
+
         </div>
       </section>
     </article>
