@@ -2,6 +2,14 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
+import pic8 from '../assets/images/pic08.jpg';
+import pic9 from '../assets/images/pic09.jpg';
+import pic10 from '../assets/images/pic10.jpg';
+import pic11 from '../assets/images/pic11.jpg';
+import pic12 from '../assets/images/pic12.jpg';
+import pic13 from '../assets/images/pic13.jpg';
+import pic14 from '../assets/images/pic14.jpg';
+
 const IndexPage = () => (
   <Layout fullMenu>
     <article id="main">
@@ -31,7 +39,22 @@ const IndexPage = () => (
           analyzing data & metrics to manage our progress and performance
           </p>
 
-          <hr />
+          <hr/>
+          <section>
+          <h4>Gallery</h4>
+
+            <div className="box alt">
+              <div className="row gtr-50 gtr-uniform">
+                <div className="col-4"><span className="image fit"><img src={pic8} alt="" /></span></div>
+                <div className="col-4"><span className="image fit"><img src={pic9} alt="" /></span></div>
+                <div className="col-4"><span className="image fit"><img src={pic10} alt="" /></span></div>
+                <div className="col-4"><span className="image fit"><img src={pic11} alt="" /></span></div>
+                <div className="col-4"><span className="image fit"><img src={pic12} alt="" /></span></div>
+                <div className="col-4"><span className="image fit"><img src={pic13} alt="" /></span></div>
+                <div className="col-4"><span className="image fit"><img src={pic14} alt="" /></span></div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </article>
