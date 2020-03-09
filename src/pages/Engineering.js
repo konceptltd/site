@@ -1,16 +1,53 @@
 import React from 'react';
-
+import Gallery from 'react-grid-gallery';
 import Layout from '../components/Layout';
 
 import pic8 from '../assets/images/pic08.jpg';
 import pic9 from '../assets/images/pic09.jpg';
 import pic10 from '../assets/images/pic10.jpg';
-import pic11 from '../assets/images/pic11.jpg';
 import pic12 from '../assets/images/pic12.jpg';
 import pic13 from '../assets/images/pic13.jpg';
-import pic14 from '../assets/images/pic14.jpg';
 
-const IndexPage = () => (
+const Images =
+[
+  {
+    src: pic8,
+    thumbnail: pic8,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174,
+    caption: "After Rain (Jeshu John - designerspics.com)"
+  },
+  {
+    src: pic9,
+    thumbnail: pic9,
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    caption: "Boats (Jeshu John - designerspics.com)"
+  },
+  {
+    src: pic10,
+    thumbnail: pic10,
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    caption: "Boats (Jeshu John - designerspics.com)"
+  },
+  {
+    src: pic12,
+    thumbnail: pic12,
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    caption: "Boats (Jeshu John - designerspics.com)"
+  },
+  {
+    src: pic13,
+    thumbnail: pic13,
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    caption: "Boats (Jeshu John - designerspics.com)"
+  },
+]
+
+const EngineeringPage = () => (
   <Layout fullMenu>
     <article id="main">
       <header>
@@ -45,13 +82,7 @@ const IndexPage = () => (
 
             <div className="box alt">
               <div className="row gtr-50 gtr-uniform">
-                <div className="col-4"><span className="image fit"><img src={pic8} alt="" /></span></div>
-                <div className="col-4"><span className="image fit"><img src={pic9} alt="" /></span></div>
-                <div className="col-4"><span className="image fit"><img src={pic10} alt="" /></span></div>
-                <div className="col-4"><span className="image fit"><img src={pic11} alt="" /></span></div>
-                <div className="col-4"><span className="image fit"><img src={pic12} alt="" /></span></div>
-                <div className="col-4"><span className="image fit"><img src={pic13} alt="" /></span></div>
-                <div className="col-4"><span className="image fit"><img src={pic14} alt="" /></span></div>
+                <Gallery images={Images}/>
               </div>
             </div>
           </section>
@@ -59,6 +90,5 @@ const IndexPage = () => (
       </section>
     </article>
   </Layout>
-);
-
-export default IndexPage;
+)
+export default EngineeringPage;

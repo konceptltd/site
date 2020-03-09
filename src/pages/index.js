@@ -7,7 +7,7 @@ import Scroll from '../components/Scroll';
 import pic1 from '../assets/images/pic01.jpg';
 import pic6 from '../assets/images/pic06.jpg';
 import pic7 from '../assets/images/pic07.jpg';
-import pic8 from '../assets/images/pic08.jpg';
+import pic11 from '../assets/images/pic11.jpg';
 import config from '../../config';
 const IndexPage = () => (
   <Layout fullMenu>
@@ -44,7 +44,7 @@ const IndexPage = () => (
     <section id="two" className="wrapper alt style4">
       <section className="spotlight">
         <div className="image">
-          <img src={pic8} alt="" />
+          <img src={pic11} alt="" />
         </div>
         <div className="content">
           <h2>
