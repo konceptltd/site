@@ -44,6 +44,16 @@ const IndexPage = () => (
             does the hard work of ensuring, that your systems are up and running, and the standards are looked after.
           </p>
 
+          <hr />
+          <h3>Systems That Scale</h3>
+          <p>
+            One of the most diffcult challenges in the world of software engineering is building systems that can scale
+            according the customer's needs. Our team is specialised in building and deploying microservices that can scale
+            at the specified layer of your application. We optimize the code to achieve high performance, reliability, security
+            and 
+          </p>
+
+
         </div>
       </section>
     </article>
