@@ -25,6 +25,13 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/assets/bg`,
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     'gatsby-transformer-sharp',

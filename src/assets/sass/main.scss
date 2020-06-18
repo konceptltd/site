@@ -111,7 +111,6 @@
 		}
 
 	body, .main-body {
-		background: _palette(bg);
 
 		// Stops initial animations until page loads.
 			&.is-preload {
@@ -170,7 +169,6 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
 		font-weight: _font(weight-extrabold);
 		letter-spacing: _size(letter-spacing-alt);
 		line-height: 1em;
@@ -1083,7 +1081,7 @@
 		}
 
 		@for $i from 1 through _misc(max-spotlights) {
-			$j: 0.075 * $i;
+			$j: 0.025 * $i;
 
 			&:nth-child(#{$i}) {
 				background-color: rgba(0,0,0, $j);
@@ -1135,10 +1133,6 @@
 		// Basic
 
 			strong, b {
-				color: _palette($p, fg-bold);
-			}
-
-			h2, h3, h4, h5, h6 {
 				color: _palette($p, fg-bold);
 			}
 
@@ -1352,11 +1346,11 @@
 		}
 
 		&.style4 {
-			background-color: transparent;
+			@include wrapper(homepage-blocks);
 		}
 
 		&.style5 {
-			@include wrapper(accent7);
+			@include wrapper(homepage-blocks);
 		}
 
 		@include breakpoint('<=medium') {
@@ -1785,7 +1779,6 @@
 	#main {
 		> header {
 			@include padding(12em, 0);
-			@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1910,7 +1903,6 @@
 
 	body.landing, .main-body.landing {
 		#page-wrapper {
-			@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")'));
 			background-attachment: fixed;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1931,7 +1923,6 @@
 
 			#banner,
 			.wrapper.style4 {
-				@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/banner.jpg")'));
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;

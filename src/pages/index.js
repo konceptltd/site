@@ -1,8 +1,8 @@
 import React from 'react';
 import Img from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from '../components/Layout';
+import ImageSlider from '../components/ImageSlider'
 import "../assets/sass/banner.scss"
 
 import Scroll from '../components/Scroll';
@@ -13,35 +13,15 @@ import pic7 from '../assets/images/pic07.jpg';
 import pic11 from '../assets/images/pic11.jpg';
 import config from '../../config';
 
-const Images = (query) => {
-  return query.data.allImageSharp.edges.map(edge => {
-    return <div className="banner-image"><Img fluid={edge.node.fluid} /> </div>
-  });
-};
+
 const IndexPage = () => {
-  const bannerImage = useStaticQuery(
-    graphql`
-    query MyQuery {
-      allImageSharp(filter: {fluid: {originalName: {in: [
-          "ricardo-gomez-angel-keSfgkPfmkw-unsplash.jpg",
-          "gio-bartlett-FGRLnE2CGn8-unsplash.jpg",
-          "jason-blackeye-XYrjl3j7smo-unsplash.jpg"]}}}){
-        edges {
-          node {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }`
-  );
   return (
   <Layout fullMenu>
-    <div className="banner">
-      <Images data={bannerImage}/>
-    </div>
-    {/* <section id="banner">
+    <section>
+      <ImageSlider/>
+    </section>
+
+    <section id="banner">
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
@@ -184,7 +164,7 @@ const IndexPage = () => {
             </a>
         </header>
       </div>
-    </section> */}
+    </section>
   </Layout>
   )
 };
