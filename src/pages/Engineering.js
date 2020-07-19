@@ -53,7 +53,7 @@ const Images =
 const EngineeringPage = () => (
   <Layout fullMenu>
 
-    <section>
+    <section className="image-overlay">
       <EngineeringImageSlider/>
     </section>
 

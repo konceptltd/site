@@ -15,7 +15,7 @@ import config from '../../config';
 
 const IndexPage = () => (
   <Layout fullMenu>
-    <section>
+    <section className="image-overlay">
       <ImageSlider/>
     </section>
 
