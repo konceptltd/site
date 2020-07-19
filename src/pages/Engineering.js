@@ -1,6 +1,9 @@
 import React from 'react';
 import Gallery from 'react-grid-gallery';
 import Layout from '../components/Layout';
+import Scroll from '../components/Scroll';
+import EngineeringImageSlider from '../components/EngineeringImageSlider'
+
 
 import pic8 from '../assets/images/pic08.jpg';
 import pic9 from '../assets/images/pic09.jpg';
@@ -49,11 +52,23 @@ const Images =
 
 const EngineeringPage = () => (
   <Layout fullMenu>
-    <article id="main">
-      <header>
-        <h2>End to End Engineering Solutions</h2>
-        <p>World class standards</p>
-      </header>
+
+    <section>
+      <EngineeringImageSlider/>
+    </section>
+
+  <section id="banner">
+    <div className="inner">
+      <h2>End to End Engineering Solutions</h2>
+      <p>World class standards</p>
+    </div>
+    <Scroll type="id" element="one">
+        <a href="#one" className="more">
+        </a>
+      </Scroll>
+  </section>
+
+    <article id="one">
       <section className="wrapper style5">
         <div className="inner">
           <h4>A culture of innovation</h4>
@@ -67,7 +82,7 @@ const EngineeringPage = () => (
           support services.
           </p>
 
-          <h4>Projects Execution strategy</h4>
+          <h4>Project Execution strategy</h4>
           <p>
           We make sure our project’s goals and objectives have been clearly and defined in each
           stage of our execution steps. Skilled leadership lead to dynamic project team along

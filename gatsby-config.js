@@ -32,6 +32,13 @@ module.exports = {
         path: `${__dirname}/src/assets/bg`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `engineering`,
+        path: `${__dirname}/src/assets/engineering`,
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     'gatsby-transformer-sharp',

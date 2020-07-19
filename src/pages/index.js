@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from "gatsby-image"
 
 import Layout from '../components/Layout';
 import ImageSlider from '../components/ImageSlider'
@@ -14,8 +13,7 @@ import pic11 from '../assets/images/pic11.jpg';
 import config from '../../config';
 
 
-const IndexPage = () => {
-  return (
+const IndexPage = () => (
   <Layout fullMenu>
     <section>
       <ImageSlider/>
@@ -166,7 +164,6 @@ const IndexPage = () => {
       </div>
     </section>
   </Layout>
-  )
-};
+  );
 
 export default IndexPage;
