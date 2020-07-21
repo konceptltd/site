@@ -15,11 +15,10 @@ import config from '../../config';
 
 const IndexPage = () => (
   <Layout fullMenu>
-    <section className="image-overlay">
-      <ImageSlider/>
-    </section>
-
     <section id="banner">
+      <section className="image-overlay">
+        <ImageSlider/>
+      </section>
       <div className="inner">
         <h2>{config.heading}</h2>
         <p>{config.subHeading}</p>
