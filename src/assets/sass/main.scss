@@ -1619,6 +1619,7 @@
 		}
 
 		p {
+			@include vendor('transform', 'scale(1)');
 			letter-spacing: _size(letter-spacing-alt);
 			text-transform: uppercase;
 			text-shadow: 1px 1px 1px #10101080;
