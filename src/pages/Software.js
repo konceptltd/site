@@ -1,14 +1,29 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import Scroll from '../components/Scroll';
+import SoftwareImageSlider from '../components/SoftwareImageSlider'
+
 
 const IndexPage = () => (
   <Layout fullMenu>
-    <article id="main">
-      <header>
-        <h2>Building software</h2>
-        <p>Following the industry's best practices</p>
-      </header>
+
+    <section className="image-overlay">
+      <SoftwareImageSlider/>
+    </section>
+
+    <section id="banner">
+    <div className="inner">
+      <h2>Building software</h2>
+      <p>Following the industry's best practices</p>
+    </div>
+    <Scroll type="id" element="one">
+        <a href="#one" className="more">
+        </a>
+      </Scroll>
+  </section>
+
+    <article id="one">
       <section className="wrapper style5">
         <div className="inner">
           <h3>Shaping your business following agile methodologies</h3>

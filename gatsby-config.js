@@ -39,6 +39,20 @@ module.exports = {
         path: `${__dirname}/src/assets/engineering`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `software`,
+        path: `${__dirname}/src/assets/software`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `agriculture`,
+        path: `${__dirname}/src/assets/agriculture`,
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     'gatsby-transformer-sharp',

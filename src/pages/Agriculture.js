@@ -1,14 +1,29 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import Scroll from '../components/Scroll';
+import AgricultureImageSlider from '../components/AgricultureImageSlider'
+
 
 const IndexPage = () => (
   <Layout fullMenu>
-    <article id="main">
-      <header>
+
+    <section className="image-overlay">
+        <AgricultureImageSlider/>
+      </section>
+
+      <section id="banner">
+      <div className="inner">
         <h2>Precision Agriculture</h2>
         <p>Applying GIS and Artificial Intelligence Methodologies in Agriculture</p>
-      </header>
+      </div>
+      <Scroll type="id" element="one">
+          <a href="#one" className="more">
+          </a>
+        </Scroll>
+    </section>
+
+    <article id="one">
       <section className="wrapper style5">
         <div className="inner">
           <h3>Agricultural Technologies</h3>
