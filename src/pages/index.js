@@ -78,6 +78,7 @@ const IndexPage = () => (
             Our team has immense experience in the deployment of solutions that can scale horizontally, and
             perform highly under the load.
           </p>
+          <span>Photo by <a href="https://unsplash.com/@nesabymakers?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">NESA by Makers</a> on <a href="https://unsplash.com/s/photos/software?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
         </div>
       </section>
       <section className="spotlight">
@@ -96,6 +97,7 @@ const IndexPage = () => (
             building predictive models, that can replace the human intervention
             in some services.
           </p>
+          <span>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Winkler</a> on <a href="https://unsplash.com/s/photos/analytics?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
         </div>
       </section>
       <section className="spotlight">
@@ -112,6 +114,7 @@ const IndexPage = () => (
             sensors to help farmers monitor their farms, enhance on the quality of their
             products and fight off pests. 
           </p>
+          <span>Photo by <a href="https://unsplash.com/@adrian_infernus?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Adrian Infernus</a> on <a href="https://unsplash.com/s/photos/precision-agriculture?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
         </div>
       </section>
     </section>
